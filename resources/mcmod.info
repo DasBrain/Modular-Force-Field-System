@@ -1,0 +1,22 @@
+[
+{
+  "modid": "ModularForceFieldSystem",
+  "name": "Modular ForceField System V2",
+  "description": "This is a complete re-write of my Modular Force Field System Mod.I changed the whole concept to an item upgrade system (like the IC2 Overclockers, Storage Upgrades, and Transformer Upgrades) instead of multiple blocks.",
+  "version": "2.2.8.3.6",
+  "mcversion": "1.4.7",
+  "url": "http://forum.industrial-craft.net/index.php?page=Thread&postID=8063#post8063",
+  "updateUrl": "",
+  "authors": [
+    "Thunderdark,Lightone as Main Bughunter,mistaqur for NEI Plugin"
+  ],
+  "credits": "By Thunderdark,Matchlighter,Lightone,mistaqur",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+   "mod_IC2"
+  ]
+}
+]
