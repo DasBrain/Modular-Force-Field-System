@@ -56,7 +56,7 @@ public abstract class TileEntityMachines extends TileEntity implements INetworkH
 		this.SwitchModi = 0;
 		this.ticker = 0;
 		this.DeviceID = 0;
-		this.DeviceName = "Please set Name";
+		this.DeviceName = "Unamed";
 	}
 
 	public int getPercentageCapacity()

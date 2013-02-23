@@ -65,13 +65,13 @@ public class ItemCard extends Item
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List info, boolean b)
 	{
 		NBTTagCompound tag = NBTTagCompoundHelper.getTAGfromItemstack(itemStack);
-		info.add("Linkto: " + getforAreaname(itemStack));
+		info.add("Link: " + getforAreaname(itemStack));
 		if (tag.hasKey("worldname"))
 			info.add("World: " + tag.getString("worldname"));
 		if (tag.hasKey("linkTarget"))
 			info.add("Coords: " + new PointXYZ(tag.getCompoundTag("linkTarget")).toString());
 		if (tag.hasKey("valid"))
-			info.add(tag.getBoolean("valid") ? "§2Valid" : "§4Invalid");
+			info.add(tag.getBoolean("valid") ? "\u00a72Valid" : "\u00a74Invalid");
 	}
 
 	public void setInformation(ItemStack itemStack, PointXYZ png, String key, int value)

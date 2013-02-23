@@ -11,7 +11,7 @@ public final class ForceFieldClientUpdatehandler implements IScheduledTickHandle
 {
 	protected static Stack queue = new Stack();
 
-	public void tickEnd(EnumSet type, Object[] tickData)
+	public void tickEnd(EnumSet type, Object... tickData)
 	{
 		StringBuilder str = new StringBuilder();
 
@@ -37,7 +37,7 @@ public final class ForceFieldClientUpdatehandler implements IScheduledTickHandle
 		}
 	}
 
-	public void tickStart(EnumSet type, Object[] tickData)
+	public void tickStart(EnumSet type, Object... tickData)
 	{
 	}
 

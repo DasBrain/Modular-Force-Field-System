@@ -176,8 +176,6 @@ public class ModularForceFieldSystem
 	public static int graphicstyle;
 	public static Configuration MFFSconfig;
 	public static String Admin;
-	public static String Versionlocal;
-	public static String Versionremote;
 
 	@SidedProxy(clientSide = "mffs.client.ClientProxy", serverSide = "mffs.common.CommonProxy")
 	public static CommonProxy proxy;
@@ -194,9 +192,6 @@ public class ModularForceFieldSystem
 		initEE3Plugin();
 		ThermalExpansionPlugin();
 
-		Versionlocal = Versioninfo.curentversion();
-		Versionremote = Versioninfo.newestversion();
-
 		MinecraftForge.EVENT_BUS.register(this);
 		MinecraftForge.EVENT_BUS.register(proxy);
 
@@ -206,8 +201,8 @@ public class ModularForceFieldSystem
 		{
 			MinecraftForge.EVENT_BUS.register(new EE3Event());
 		}
+		
 		TickRegistry.registerScheduledTickHandler(new ForceFieldClientUpdatehandler(), Side.CLIENT);
-
 		TickRegistry.registerScheduledTickHandler(new ForceFieldServerUpdatehandler(), Side.SERVER);
 
 		MFFSconfig = new Configuration(event.getSuggestedConfigurationFile());

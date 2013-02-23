@@ -1,14 +1,13 @@
 [
 {
   "modid": "ModularForceFieldSystem",
-  "name": "Modular ForceField System V2",
-  "description": "Modular Force Field System is a Minecraft mod developed by Thunderdark based around the idea of force fields.",
+  "name": "Modular ForceField System",
+  "description": "Modular Force Field System is a Minecraft mod developed by Thunderdark based around the idea of force fields. This version is modified by Calclavia.",
   "version": "2.2.9",
   "mcversion": "1.4.7",
   "url": "http://forum.industrial-craft.net/index.php?page=Thread&postID=8063#post8063",
   "authors": [
     "Thunderdark","Lightone","mistaqur"
-  ],
-  "credits": "By Thunderdark,Matchlighter,Lightone,mistaqur"
+  ]
 }
 ]
