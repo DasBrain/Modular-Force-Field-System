@@ -1,7 +1,7 @@
 package chb.mods.mffs.common.item;
 
-import chb.mods.mffs.common.ModularForceFieldSystem;
 import net.minecraft.item.Item;
+import chb.mods.mffs.common.ModularForceFieldSystem;
 
 public class ItemMFFSBase extends Item
 {

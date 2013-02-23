@@ -1,14 +1,16 @@
 package chb.mods.mffs.common.item;
 
-import chb.mods.mffs.common.NBTTagCompoundHelper;
-import chb.mods.mffs.common.SecurityRight;
 import java.util.List;
-import java.util.Map;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+
 import org.lwjgl.input.Keyboard;
+
+import chb.mods.mffs.common.NBTTagCompoundHelper;
+import chb.mods.mffs.common.SecurityRight;
 
 public class ItemCardPersonalID extends Item
 {

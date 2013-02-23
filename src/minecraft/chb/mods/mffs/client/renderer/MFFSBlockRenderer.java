@@ -1,14 +1,14 @@
 package chb.mods.mffs.client.renderer;
 
-import chb.mods.mffs.common.ForceFieldTyps;
-import chb.mods.mffs.common.ModularForceFieldSystem;
-import chb.mods.mffs.common.tileentity.TileEntityForceField;
-import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.client.ForgeHooksClient;
+import chb.mods.mffs.common.ForceFieldTyps;
+import chb.mods.mffs.common.ModularForceFieldSystem;
+import chb.mods.mffs.common.tileentity.TileEntityForceField;
+import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 
 public class MFFSBlockRenderer
   implements ISimpleBlockRenderingHandler

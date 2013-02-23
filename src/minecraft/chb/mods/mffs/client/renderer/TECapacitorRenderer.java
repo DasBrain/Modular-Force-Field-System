@@ -1,10 +1,12 @@
 package chb.mods.mffs.client.renderer;
 
-import chb.mods.mffs.common.tileentity.TileEntityCapacitor;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
+
 import org.lwjgl.opengl.GL11;
+
+import chb.mods.mffs.common.tileentity.TileEntityCapacitor;
 
 public class TECapacitorRenderer extends TileEntitySpecialRenderer
 {

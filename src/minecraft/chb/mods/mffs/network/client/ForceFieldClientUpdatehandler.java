@@ -1,13 +1,11 @@
 package chb.mods.mffs.network.client;
 
-import chb.mods.mffs.common.CommonProxy;
+import java.util.EnumSet;
+import java.util.Stack;
+
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import cpw.mods.fml.common.IScheduledTickHandler;
 import cpw.mods.fml.common.TickType;
-import java.util.EnumSet;
-import java.util.Stack;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldProvider;
 
 public final class ForceFieldClientUpdatehandler
   implements IScheduledTickHandler

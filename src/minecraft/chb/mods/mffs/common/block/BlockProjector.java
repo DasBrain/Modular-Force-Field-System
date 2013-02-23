@@ -1,11 +1,12 @@
 package chb.mods.mffs.common.block;
 
-import chb.mods.mffs.common.ModularForceFieldSystem;
-import chb.mods.mffs.common.tileentity.TileEntityProjector;
 import java.util.Random;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import chb.mods.mffs.common.ModularForceFieldSystem;
+import chb.mods.mffs.common.tileentity.TileEntityProjector;
 
 public class BlockProjector extends BlockMFFSBase
 {

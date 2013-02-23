@@ -6,5 +6,5 @@ public abstract interface INetworkHandlerListener
 {
   public abstract void onNetworkHandlerUpdate(String paramString);
 
-  public abstract List getFieldsforUpdate();
+  public abstract List<String> getFieldsforUpdate();
 }

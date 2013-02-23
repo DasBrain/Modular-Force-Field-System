@@ -1,21 +1,19 @@
 package chb.mods.mffs.client.gui;
 
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+
+import org.lwjgl.opengl.GL11;
+
 import chb.mods.mffs.client.GraphicButton;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.container.ContainerControlSystem;
 import chb.mods.mffs.common.tileentity.TileEntityControlSystem;
 import chb.mods.mffs.network.client.NetworkHandlerClient;
-import java.util.List;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.FontRenderer;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.RenderEngine;
-import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.renderer.entity.RenderItem;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import org.lwjgl.opengl.GL11;
 
 public class GuiControlSystem extends GuiContainer
 {

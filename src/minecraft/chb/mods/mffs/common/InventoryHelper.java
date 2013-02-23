@@ -1,12 +1,13 @@
 package chb.mods.mffs.common;
 
-import chb.mods.mffs.common.tileentity.TileEntitySecStorage;
 import java.util.ArrayList;
 import java.util.List;
+
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import chb.mods.mffs.common.tileentity.TileEntitySecStorage;
 
 public class InventoryHelper
 {

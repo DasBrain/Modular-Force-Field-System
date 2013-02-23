@@ -1,10 +1,13 @@
 package chb.mods.mffs.common.item;
 
-import chb.mods.mffs.common.MFFSMaschines;
 import java.util.List;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+
 import org.lwjgl.input.Keyboard;
+
+import chb.mods.mffs.common.MFFSMaschines;
 
 public class ItemExtractorUpgradeBooster extends ItemMFFSBase
 {

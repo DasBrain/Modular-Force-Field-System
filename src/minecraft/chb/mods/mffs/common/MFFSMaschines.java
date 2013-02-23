@@ -1,10 +1,10 @@
 package chb.mods.mffs.common;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 import ic2.api.ExplosionWhitelist;
 import net.minecraft.block.Block;
 import net.minecraft.tileentity.TileEntity;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public enum MFFSMaschines
 {

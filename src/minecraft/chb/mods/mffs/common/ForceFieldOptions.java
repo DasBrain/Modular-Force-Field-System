@@ -1,11 +1,11 @@
 package chb.mods.mffs.common;
 
-import chb.mods.mffs.common.tileentity.TileEntityProjector;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
+import chb.mods.mffs.common.tileentity.TileEntityProjector;
 
 public final class ForceFieldOptions
 {

@@ -1,19 +1,16 @@
 package chb.mods.mffs.common.tileentity;
 
-import chb.mods.mffs.common.Linkgrid;
-import chb.mods.mffs.common.Linkgrid.Worldlinknet;
-import chb.mods.mffs.common.container.ContainerSecStorage;
-import chb.mods.mffs.common.item.ItemCardSecurityLink;
-import java.util.Map;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
-import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeDirection;
 import net.minecraftforge.common.ISidedInventory;
+import chb.mods.mffs.common.Linkgrid;
+import chb.mods.mffs.common.container.ContainerSecStorage;
+import chb.mods.mffs.common.item.ItemCardSecurityLink;
 
 public class TileEntitySecStorage extends TileEntityMachines
   implements ISidedInventory, IInventory

@@ -1,12 +1,11 @@
 package chb.mods.mffs.common.container;
 
-import chb.mods.mffs.common.SlotHelper;
-import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
-import java.util.List;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import chb.mods.mffs.common.SlotHelper;
+import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
 
 public class ContainerAdvSecurityStation extends Container
 {

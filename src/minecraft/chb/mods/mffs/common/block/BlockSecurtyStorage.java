@@ -1,14 +1,13 @@
 package chb.mods.mffs.common.block;
 
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.SecurityHelper;
 import chb.mods.mffs.common.SecurityRight;
 import chb.mods.mffs.common.multitool.ItemMultitool;
 import chb.mods.mffs.common.tileentity.TileEntitySecStorage;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
 
 public class BlockSecurtyStorage extends BlockMFFSBase
 {

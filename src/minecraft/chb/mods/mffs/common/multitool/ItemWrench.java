@@ -1,5 +1,12 @@
 package chb.mods.mffs.common.multitool;
 
+import ic2.api.IWrenchable;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+import railcraft.common.api.core.items.ICrowbar;
 import buildcraft.api.tools.IToolWrench;
 import chb.mods.mffs.api.IMFFS_Wrench;
 import chb.mods.mffs.common.Functions;
@@ -7,14 +14,6 @@ import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
 import chb.mods.mffs.common.tileentity.TileEntityAreaDefenseStation;
 import chb.mods.mffs.common.tileentity.TileEntityMachines;
 import chb.mods.mffs.common.tileentity.TileEntityProjector;
-import ic2.api.IWrenchable;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
-import railcraft.common.api.core.items.ICrowbar;
 
 public class ItemWrench extends ItemMultitool
   implements IToolWrench, ICrowbar

@@ -1,13 +1,13 @@
 package chb.mods.mffs.common;
 
-import cpw.mods.fml.common.FMLCommonHandler;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.Properties;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+
+import cpw.mods.fml.common.FMLCommonHandler;
 
 public class Versioninfo
 {

@@ -1,18 +1,19 @@
 package chb.mods.mffs.common.item;
 
-import chb.mods.mffs.common.Linkgrid;
-import chb.mods.mffs.common.Linkgrid.Worldlinknet;
-import chb.mods.mffs.common.NBTTagCompoundHelper;
-import chb.mods.mffs.common.SecurityRight;
-import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
 import java.util.List;
-import java.util.Map;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
+
 import org.lwjgl.input.Keyboard;
+
+import chb.mods.mffs.common.Linkgrid;
+import chb.mods.mffs.common.NBTTagCompoundHelper;
+import chb.mods.mffs.common.SecurityRight;
+import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
 
 public class ItemAccessCard extends ItemCardPersonalID
 {

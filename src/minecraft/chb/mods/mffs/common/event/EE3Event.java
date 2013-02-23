@@ -1,9 +1,7 @@
 package chb.mods.mffs.common.event;
 
-import chb.mods.mffs.common.ForceFieldOptions;
-import com.pahimar.ee3.event.ActionRequestEvent;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.event.ForgeSubscribe;
+import chb.mods.mffs.common.ForceFieldOptions;
 
 public class EE3Event
 {

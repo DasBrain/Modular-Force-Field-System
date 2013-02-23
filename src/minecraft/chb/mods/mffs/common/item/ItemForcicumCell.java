@@ -1,18 +1,18 @@
 package chb.mods.mffs.common.item;
 
-import chb.mods.mffs.common.ModularForceFieldSystem;
-import chb.mods.mffs.common.NBTTagCompoundHelper;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import java.util.List;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
+import chb.mods.mffs.common.ModularForceFieldSystem;
+import chb.mods.mffs.common.NBTTagCompoundHelper;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemForcicumCell extends ItemMFFSBase
 {

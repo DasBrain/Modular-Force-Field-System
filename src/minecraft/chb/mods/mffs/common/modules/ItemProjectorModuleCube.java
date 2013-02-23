@@ -1,8 +1,11 @@
 package chb.mods.mffs.common.modules;
 
+import java.util.Set;
+
+import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
 import chb.mods.mffs.api.PointXYZ;
 import chb.mods.mffs.common.IModularProjector;
-import chb.mods.mffs.common.IModularProjector.Slots;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.options.ItemProjectorOptionBase;
 import chb.mods.mffs.common.options.ItemProjectorOptionBlockBreaker;
@@ -14,9 +17,6 @@ import chb.mods.mffs.common.options.ItemProjectorOptionForceFieldJammer;
 import chb.mods.mffs.common.options.ItemProjectorOptionMobDefence;
 import chb.mods.mffs.common.options.ItemProjectorOptionSponge;
 import chb.mods.mffs.common.tileentity.TileEntityProjector;
-import java.util.Set;
-import net.minecraft.item.Item;
-import net.minecraft.tileentity.TileEntity;
 
 public class ItemProjectorModuleCube extends Module3DBase
 {

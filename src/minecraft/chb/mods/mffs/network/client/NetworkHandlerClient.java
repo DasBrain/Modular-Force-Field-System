@@ -1,6 +1,14 @@
 package chb.mods.mffs.network.client;
 
-import chb.mods.mffs.common.CommonProxy;
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.lang.reflect.Field;
+
+import net.minecraft.network.INetworkManager;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.Packet250CustomPayload;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
 import chb.mods.mffs.common.tileentity.TileEntityAreaDefenseStation;
@@ -14,23 +22,14 @@ import chb.mods.mffs.common.tileentity.TileEntityProjector;
 import chb.mods.mffs.common.tileentity.TileEntitySecStorage;
 import chb.mods.mffs.network.INetworkHandlerEventListener;
 import chb.mods.mffs.network.INetworkHandlerListener;
+
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteStreams;
+
 import cpw.mods.fml.common.network.IPacketHandler;
 import cpw.mods.fml.common.network.PacketDispatcher;
 import cpw.mods.fml.common.network.Player;
 import cpw.mods.fml.relauncher.ReflectionHelper;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.io.PrintStream;
-import java.lang.reflect.Field;
-import net.minecraft.network.INetworkManager;
-import net.minecraft.network.packet.Packet;
-import net.minecraft.network.packet.Packet250CustomPayload;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldProvider;
-import net.minecraft.world.chunk.Chunk;
 
 public class NetworkHandlerClient
   implements IPacketHandler

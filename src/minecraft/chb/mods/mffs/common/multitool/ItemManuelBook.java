@@ -1,9 +1,9 @@
 package chb.mods.mffs.common.multitool;
 
-import chb.mods.mffs.common.ModularForceFieldSystem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import chb.mods.mffs.common.ModularForceFieldSystem;
 
 public class ItemManuelBook extends ItemMultitool
 {

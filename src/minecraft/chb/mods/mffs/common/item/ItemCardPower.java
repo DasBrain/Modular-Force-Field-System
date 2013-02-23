@@ -1,12 +1,13 @@
 package chb.mods.mffs.common.item;
 
-import chb.mods.mffs.api.IForceEnergyItems;
-import chb.mods.mffs.api.IPowerLinkItem;
-import chb.mods.mffs.common.tileentity.TileEntityMachines;
 import java.util.List;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import chb.mods.mffs.api.IForceEnergyItems;
+import chb.mods.mffs.api.IPowerLinkItem;
+import chb.mods.mffs.common.tileentity.TileEntityMachines;
 
 public class ItemCardPower extends ItemMFFSBase
   implements IPowerLinkItem, IForceEnergyItems

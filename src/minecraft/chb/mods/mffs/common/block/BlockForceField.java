@@ -1,27 +1,7 @@
 package chb.mods.mffs.common.block;
 
-import chb.mods.mffs.api.IForceFieldBlock;
-import chb.mods.mffs.api.PointXYZ;
-import chb.mods.mffs.common.CommonProxy;
-import chb.mods.mffs.common.ForceFieldBlockStack;
-import chb.mods.mffs.common.ForceFieldTyps;
-import chb.mods.mffs.common.Functions;
-import chb.mods.mffs.common.Linkgrid;
-import chb.mods.mffs.common.Linkgrid.Worldlinknet;
-import chb.mods.mffs.common.MFFSDamageSource;
-import chb.mods.mffs.common.ModularForceFieldSystem;
-import chb.mods.mffs.common.SecurityHelper;
-import chb.mods.mffs.common.SecurityRight;
-import chb.mods.mffs.common.WorldMap;
-import chb.mods.mffs.common.WorldMap.ForceFieldWorld;
-import chb.mods.mffs.common.tileentity.TileEntityCapacitor;
-import chb.mods.mffs.common.tileentity.TileEntityForceField;
-import chb.mods.mffs.common.tileentity.TileEntityProjector;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import java.util.Map;
 import java.util.Random;
-import net.minecraft.block.Block;
+
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
@@ -31,6 +11,22 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import chb.mods.mffs.api.IForceFieldBlock;
+import chb.mods.mffs.api.PointXYZ;
+import chb.mods.mffs.common.ForceFieldBlockStack;
+import chb.mods.mffs.common.ForceFieldTyps;
+import chb.mods.mffs.common.Functions;
+import chb.mods.mffs.common.Linkgrid;
+import chb.mods.mffs.common.MFFSDamageSource;
+import chb.mods.mffs.common.ModularForceFieldSystem;
+import chb.mods.mffs.common.SecurityHelper;
+import chb.mods.mffs.common.SecurityRight;
+import chb.mods.mffs.common.WorldMap;
+import chb.mods.mffs.common.tileentity.TileEntityCapacitor;
+import chb.mods.mffs.common.tileentity.TileEntityForceField;
+import chb.mods.mffs.common.tileentity.TileEntityProjector;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockForceField extends BlockContainer
   implements IForceFieldBlock

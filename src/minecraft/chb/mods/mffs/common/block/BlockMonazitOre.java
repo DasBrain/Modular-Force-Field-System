@@ -1,10 +1,11 @@
 package chb.mods.mffs.common.block;
 
-import chb.mods.mffs.common.ModularForceFieldSystem;
 import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.IBlockAccess;
+import chb.mods.mffs.common.ModularForceFieldSystem;
 
 public class BlockMonazitOre extends Block
 {

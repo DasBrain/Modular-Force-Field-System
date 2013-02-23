@@ -1,20 +1,15 @@
 package chb.mods.mffs.common.tileentity;
 
+import java.util.Random;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import chb.mods.mffs.api.PointXYZ;
 import chb.mods.mffs.common.ForceFieldBlockStack;
 import chb.mods.mffs.common.Linkgrid;
-import chb.mods.mffs.common.Linkgrid.Worldlinknet;
 import chb.mods.mffs.common.WorldMap;
-import chb.mods.mffs.common.WorldMap.ForceFieldWorld;
 import chb.mods.mffs.network.client.ForceFieldClientUpdatehandler;
 import chb.mods.mffs.network.server.ForceFieldServerUpdatehandler;
-import chb.mods.mffs.network.server.ForceFieldServerUpdatehandler.ForceFieldpacket;
-import java.util.Map;
-import java.util.Random;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldProvider;
 
 public class TileEntityForceField extends TileEntity
 {

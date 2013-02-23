@@ -1,18 +1,18 @@
 package chb.mods.mffs.client.gui;
 
-import chb.mods.mffs.common.ModularForceFieldSystem;
 import java.util.ArrayList;
 import java.util.List;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.FontRenderer;
+
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.RenderEngine;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.inventory.Container;
 import net.minecraft.item.ItemStack;
+
 import org.lwjgl.opengl.GL11;
+
+import chb.mods.mffs.common.ModularForceFieldSystem;
 
 public class GuiManuelScreen extends GuiContainer
 {

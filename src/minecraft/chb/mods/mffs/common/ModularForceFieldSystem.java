@@ -1,5 +1,21 @@
 package chb.mods.mffs.common;
 
+import java.util.List;
+import java.util.logging.Level;
+
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+import net.minecraftforge.common.Configuration;
+import net.minecraftforge.common.ForgeChunkManager;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.Property;
+
+import org.modstats.ModstatInfo;
+import org.modstats.Modstats;
+
 import chb.mods.mffs.common.block.BlockAdvSecurtyStation;
 import chb.mods.mffs.common.block.BlockAreaDefenseStation;
 import chb.mods.mffs.common.block.BlockCapacitor;
@@ -56,43 +72,21 @@ import chb.mods.mffs.network.client.ForceFieldClientUpdatehandler;
 import chb.mods.mffs.network.client.NetworkHandlerClient;
 import chb.mods.mffs.network.server.ForceFieldServerUpdatehandler;
 import chb.mods.mffs.network.server.NetworkHandlerServer;
+
 import com.google.common.collect.Lists;
+
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Init;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.Mod.PostInit;
-import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.network.NetworkMod.SidedPacketHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.common.registry.TickRegistry;
 import cpw.mods.fml.relauncher.Side;
-import java.io.PrintStream;
-import java.util.List;
-import java.util.logging.Level;
-import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
-import net.minecraftforge.common.Configuration;
-import net.minecraftforge.common.ForgeChunkManager;
-import net.minecraftforge.common.ForgeChunkManager.OrderedLoadingCallback;
-import net.minecraftforge.common.ForgeChunkManager.Ticket;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.Property;
-import net.minecraftforge.event.EventBus;
-import org.modstats.IModstatsReporter;
-import org.modstats.ModstatInfo;
-import org.modstats.Modstats;
 
 @Mod(modid="ModularForceFieldSystem", name="Modular ForceField System", version="2.2.8.3.6", dependencies="after:ThermalExpansion")
 @NetworkMod(versionBounds="[2.2.8.3.6]", clientSideRequired=true, serverSideRequired=false, clientPacketHandlerSpec=@NetworkMod.SidedPacketHandler(channels={"MFFS"}, packetHandler=NetworkHandlerClient.class), serverPacketHandlerSpec=@NetworkMod.SidedPacketHandler(channels={"MFFS"}, packetHandler=NetworkHandlerServer.class))

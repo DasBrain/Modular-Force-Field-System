@@ -1,9 +1,9 @@
 package chb.mods.mffs.common;
 
-import chb.mods.mffs.api.IForceEnergyItems;
-import chb.mods.mffs.common.item.ItemMFFSBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import chb.mods.mffs.api.IForceEnergyItems;
+import chb.mods.mffs.common.item.ItemMFFSBase;
 
 public abstract class ForceEnergyItems extends ItemMFFSBase
   implements IForceEnergyItems

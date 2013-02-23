@@ -1,8 +1,9 @@
 package chb.mods.mffs.common.modules;
 
+import java.util.Set;
+
 import chb.mods.mffs.common.ForceFieldTyps;
 import chb.mods.mffs.common.IModularProjector;
-import java.util.Set;
 
 public abstract class Module3DBase extends ModuleBase
 {

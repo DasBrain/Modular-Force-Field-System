@@ -1,5 +1,14 @@
 package chb.mods.mffs.common.modules;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 import chb.mods.mffs.common.ForceFieldTyps;
 import chb.mods.mffs.common.Functions;
 import chb.mods.mffs.common.IModularProjector;
@@ -8,14 +17,6 @@ import chb.mods.mffs.common.ProjectorTyp;
 import chb.mods.mffs.common.SecurityHelper;
 import chb.mods.mffs.common.SecurityRight;
 import chb.mods.mffs.common.tileentity.TileEntityProjector;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
 
 public abstract class ModuleBase extends Item
 {

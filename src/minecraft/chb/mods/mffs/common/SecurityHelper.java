@@ -1,5 +1,8 @@
 package chb.mods.mffs.common;
 
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
 import chb.mods.mffs.common.tileentity.TileEntityAreaDefenseStation;
 import chb.mods.mffs.common.tileentity.TileEntityCapacitor;
@@ -8,10 +11,6 @@ import chb.mods.mffs.common.tileentity.TileEntityConverter;
 import chb.mods.mffs.common.tileentity.TileEntityExtractor;
 import chb.mods.mffs.common.tileentity.TileEntityProjector;
 import chb.mods.mffs.common.tileentity.TileEntitySecStorage;
-import java.util.Map;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
 
 public class SecurityHelper
 {

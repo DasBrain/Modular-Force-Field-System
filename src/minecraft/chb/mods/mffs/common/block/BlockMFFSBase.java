@@ -1,5 +1,18 @@
 package chb.mods.mffs.common.block;
 
+import java.util.Random;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.MathHelper;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import net.minecraftforge.common.ForgeDirection;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.SecurityHelper;
 import chb.mods.mffs.common.SecurityRight;
@@ -12,19 +25,6 @@ import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
 import chb.mods.mffs.common.tileentity.TileEntityControlSystem;
 import chb.mods.mffs.common.tileentity.TileEntityMachines;
 import chb.mods.mffs.common.tileentity.TileEntityProjector;
-import java.util.Random;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.material.Material;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.MathHelper;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.common.ForgeDirection;
 
 public abstract class BlockMFFSBase extends BlockContainer
 {

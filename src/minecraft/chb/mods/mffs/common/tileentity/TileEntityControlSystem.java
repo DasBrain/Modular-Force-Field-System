@@ -1,8 +1,18 @@
 package chb.mods.mffs.common.tileentity;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraftforge.common.ForgeDirection;
+import net.minecraftforge.common.ISidedInventory;
 import chb.mods.mffs.api.PointXYZ;
 import chb.mods.mffs.common.Linkgrid;
-import chb.mods.mffs.common.Linkgrid.Worldlinknet;
 import chb.mods.mffs.common.MFFSMaschines;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.NBTTagCompoundHelper;
@@ -10,18 +20,6 @@ import chb.mods.mffs.common.container.ContainerControlSystem;
 import chb.mods.mffs.common.item.ItemCardDataLink;
 import chb.mods.mffs.common.item.ItemCardSecurityLink;
 import chb.mods.mffs.network.server.NetworkHandlerServer;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.Container;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.world.World;
-import net.minecraftforge.common.ForgeDirection;
-import net.minecraftforge.common.ISidedInventory;
 
 public class TileEntityControlSystem extends TileEntityMachines
   implements ISidedInventory

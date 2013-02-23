@@ -5,8 +5,6 @@ import chb.mods.mffs.common.Versioninfo;
 import codechicken.nei.MultiItemRange;
 import codechicken.nei.api.API;
 import codechicken.nei.api.IConfigureNEI;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 
 public class NEI_MFFS_Config
   implements IConfigureNEI

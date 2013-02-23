@@ -1,17 +1,18 @@
 package chb.mods.mffs.common.options;
 
-import chb.mods.mffs.api.PointXYZ;
-import chb.mods.mffs.common.IModularProjector.Slots;
-import chb.mods.mffs.common.MFFSDamageSource;
-import chb.mods.mffs.common.modules.ItemProjectorModuleSphere;
-import chb.mods.mffs.common.tileentity.TileEntityProjector;
 import java.util.List;
+
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.monster.EntityGhast;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.EntitySlime;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
+import chb.mods.mffs.api.PointXYZ;
+import chb.mods.mffs.common.IModularProjector;
+import chb.mods.mffs.common.MFFSDamageSource;
+import chb.mods.mffs.common.modules.ItemProjectorModuleSphere;
+import chb.mods.mffs.common.tileentity.TileEntityProjector;
 
 public class ItemProjectorOptionMobDefence extends ItemProjectorOptionBase
 {

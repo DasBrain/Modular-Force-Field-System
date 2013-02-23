@@ -1,10 +1,9 @@
 package chb.mods.mffs.common.options;
 
+import net.minecraft.world.World;
 import chb.mods.mffs.api.PointXYZ;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.tileentity.TileEntityProjector;
-import net.minecraft.block.material.Material;
-import net.minecraft.world.World;
 
 public class ItemProjectorOptionSponge extends ItemProjectorOptionBase
   implements IInteriorCheck

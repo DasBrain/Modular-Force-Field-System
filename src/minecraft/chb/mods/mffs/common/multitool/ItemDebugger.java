@@ -1,11 +1,10 @@
 package chb.mods.mffs.common.multitool;
 
-import chb.mods.mffs.common.tileentity.TileEntityMachines;
-import java.io.PrintStream;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import chb.mods.mffs.common.tileentity.TileEntityMachines;
 
 public class ItemDebugger extends ItemMultitool
 {

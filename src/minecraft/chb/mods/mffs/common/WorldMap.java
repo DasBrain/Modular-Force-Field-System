@@ -1,10 +1,12 @@
 package chb.mods.mffs.common;
 
-import chb.mods.mffs.api.PointXYZ;
-import com.google.common.collect.MapMaker;
 import java.util.Hashtable;
 import java.util.Map;
+
 import net.minecraft.world.World;
+import chb.mods.mffs.api.PointXYZ;
+
+import com.google.common.collect.MapMaker;
 
 public final class WorldMap
 {

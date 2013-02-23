@@ -1,9 +1,9 @@
 package chb.mods.mffs.common;
 
-import chb.mods.mffs.common.tileentity.TileEntityMachines;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import chb.mods.mffs.common.tileentity.TileEntityMachines;
 
 public class SlotHelper extends Slot
 {

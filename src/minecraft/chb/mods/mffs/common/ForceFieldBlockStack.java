@@ -1,9 +1,10 @@
 package chb.mods.mffs.common;
 
-import chb.mods.mffs.api.PointXYZ;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+
+import chb.mods.mffs.api.PointXYZ;
 
 public class ForceFieldBlockStack
 {

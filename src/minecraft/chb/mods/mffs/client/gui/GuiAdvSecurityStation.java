@@ -1,23 +1,22 @@
 package chb.mods.mffs.client.gui;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+
+import org.lwjgl.opengl.GL11;
+
 import chb.mods.mffs.common.SecurityRight;
 import chb.mods.mffs.common.container.ContainerAdvSecurityStation;
 import chb.mods.mffs.common.item.ItemCardPersonalID;
 import chb.mods.mffs.common.tileentity.TileEntityAdvSecurityStation;
 import chb.mods.mffs.network.client.NetworkHandlerClient;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.FontRenderer;
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.RenderEngine;
-import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import org.lwjgl.opengl.GL11;
 
 public class GuiAdvSecurityStation extends GuiContainer
 {
@@ -68,7 +67,7 @@ public class GuiAdvSecurityStation extends GuiContainer
     ItemStack modCard = this.tileEntity.getModCardStack();
     if ((modCard != null) && 
       ((modCard.getItem() instanceof ItemCardPersonalID))) {
-      List srKeys = new ArrayList();
+      List<String> srKeys = new ArrayList();
       srKeys.addAll(SecurityRight.rights.keySet());
       Collections.sort(srKeys);
       for (String srKey : srKeys) {

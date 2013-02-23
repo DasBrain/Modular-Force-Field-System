@@ -1,18 +1,16 @@
 package chb.mods.mffs.client.gui;
 
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.entity.player.EntityPlayer;
+
+import org.lwjgl.opengl.GL11;
+
 import chb.mods.mffs.client.GraphicButton;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.container.ContainerForceEnergyExtractor;
 import chb.mods.mffs.common.tileentity.TileEntityExtractor;
 import chb.mods.mffs.network.client.NetworkHandlerClient;
-import java.util.List;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.FontRenderer;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.RenderEngine;
-import net.minecraft.entity.player.EntityPlayer;
-import org.lwjgl.opengl.GL11;
 
 public class GuiExtractor extends GuiContainer
 {

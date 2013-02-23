@@ -1,9 +1,14 @@
 package chb.mods.mffs.common.item;
 
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+import net.minecraftforge.common.ISidedInventory;
 import chb.mods.mffs.api.PointXYZ;
 import chb.mods.mffs.common.Functions;
 import chb.mods.mffs.common.Linkgrid;
-import chb.mods.mffs.common.Linkgrid.Worldlinknet;
 import chb.mods.mffs.common.ModularForceFieldSystem;
 import chb.mods.mffs.common.SecurityHelper;
 import chb.mods.mffs.common.SecurityRight;
@@ -13,15 +18,6 @@ import chb.mods.mffs.common.tileentity.TileEntityCapacitor;
 import chb.mods.mffs.common.tileentity.TileEntityControlSystem;
 import chb.mods.mffs.common.tileentity.TileEntityProjector;
 import chb.mods.mffs.common.tileentity.TileEntitySecStorage;
-import java.util.Map;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldProvider;
-import net.minecraft.world.chunk.Chunk;
-import net.minecraftforge.common.ISidedInventory;
 
 public class ItemCardSecurityLink extends ItemCard
 {

@@ -1,13 +1,13 @@
 package chb.mods.mffs.common;
 
-import chb.mods.mffs.client.gui.GuiManuelScreen;
-import chb.mods.mffs.common.container.ContainerDummy;
-import cpw.mods.fml.common.network.IGuiHandler;
-import java.io.PrintStream;
 import java.lang.reflect.Constructor;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import chb.mods.mffs.client.gui.GuiManuelScreen;
+import chb.mods.mffs.common.container.ContainerDummy;
+import cpw.mods.fml.common.network.IGuiHandler;
 
 public class CommonProxy
   implements IGuiHandler

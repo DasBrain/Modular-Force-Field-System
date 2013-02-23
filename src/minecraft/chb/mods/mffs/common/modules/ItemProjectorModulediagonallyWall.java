@@ -1,9 +1,9 @@
 package chb.mods.mffs.common.modules;
 
+import java.util.Set;
+
 import chb.mods.mffs.api.PointXYZ;
 import chb.mods.mffs.common.IModularProjector;
-import chb.mods.mffs.common.IModularProjector.Slots;
-import java.util.Set;
 
 public class ItemProjectorModulediagonallyWall extends ItemProjectorModuleWall
 {

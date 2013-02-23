@@ -1,9 +1,9 @@
 package chb.mods.mffs.common.block;
 
-import chb.mods.mffs.common.ModularForceFieldSystem;
-import chb.mods.mffs.common.tileentity.TileEntityControlSystem;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import chb.mods.mffs.common.ModularForceFieldSystem;
+import chb.mods.mffs.common.tileentity.TileEntityControlSystem;
 
 public class BlockControlSystem extends BlockMFFSBase
 {
