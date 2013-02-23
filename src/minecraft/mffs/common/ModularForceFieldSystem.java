@@ -378,7 +378,7 @@ public class ModularForceFieldSystem
 		GameRegistry.registerBlock(MFFSFieldblock, "MFFSFieldblock");
 		GameRegistry.registerTileEntity(TileEntityForceField.class, "MFFSForceField");
 
-		MFFSMaschines.initialize();
+		MFFSMachines.initialize();
 		ProjectorTyp.initialize();
 		ProjectorOptions.initialize();
 

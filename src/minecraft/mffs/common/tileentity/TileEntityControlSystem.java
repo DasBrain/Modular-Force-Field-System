@@ -5,7 +5,7 @@ import java.util.List;
 
 import mffs.api.PointXYZ;
 import mffs.common.Linkgrid;
-import mffs.common.MFFSMaschines;
+import mffs.common.MFFSMachines;
 import mffs.common.ModularForceFieldSystem;
 import mffs.common.NBTTagCompoundHelper;
 import mffs.common.container.ContainerControlSystem;
@@ -285,9 +285,9 @@ public class TileEntityControlSystem extends TileEntityMachines implements ISide
 			{
 				setRemotePowerleft(this.remote.getPercentageCapacity());
 			}
-			if (!MFFSMaschines.fromTE(this.remote).displayName.equalsIgnoreCase(getRemoteDeviceTyp()))
+			if (!MFFSMachines.fromTE(this.remote).displayName.equalsIgnoreCase(getRemoteDeviceTyp()))
 			{
-				setRemoteDeviceTyp(MFFSMaschines.fromTE(this.remote).displayName);
+				setRemoteDeviceTyp(MFFSMachines.fromTE(this.remote).displayName);
 			}
 
 			if ((PointXYZ.distance(getMaschinePoint(), this.remote.getMaschinePoint()) > 61.0D) && (getRemoteGUIinRange()))

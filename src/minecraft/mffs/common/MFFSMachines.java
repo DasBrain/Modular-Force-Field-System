@@ -6,7 +6,7 @@ import net.minecraft.tileentity.TileEntity;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-public enum MFFSMaschines
+public enum MFFSMachines
 {
 	Projector(1, "MFFSProjector", "Projector", "TileEntityProjector", "GuiProjector", "ContainerProjector", ModularForceFieldSystem.MFFSProjector, 0, "KyKyFyKJK", "ByByKyBaB"),
 	Extractor(2, "MFFSExtractor", "Extractor", "TileEntityExtractor", "GuiExtractor", "ContainerForceEnergyExtractor", ModularForceFieldSystem.MFFSExtractor, 0, " C xFx G ", " E xKx J "),
@@ -28,7 +28,7 @@ public enum MFFSMaschines
 	public String recipeue;
 	public int baseTex;
 
-	private MFFSMaschines(int index, String nm, String dispNm, String cls, String gui, String container, Block block, int baseTex, String recipeic, String recipeue)
+	private MFFSMachines(int index, String nm, String dispNm, String cls, String gui, String container, Block block, int baseTex, String recipeic, String recipeue)
 	{
 		this.index = index;
 		this.inCodeName = nm;
@@ -36,7 +36,7 @@ public enum MFFSMaschines
 		this.Gui = gui;
 		try
 		{
-			this.clazz = Class.forName("chb.mods.mffs.common.tileentity." + cls);
+			this.clazz = Class.forName("mffs.common.tileentity." + cls);
 		}
 		catch (ClassNotFoundException ex)
 		{
@@ -44,7 +44,7 @@ public enum MFFSMaschines
 		}
 		try
 		{
-			this.Container = Class.forName("chb.mods.mffs.common.container." + container);
+			this.Container = Class.forName("mffs.common.container." + container);
 		}
 		catch (ClassNotFoundException ex)
 		{
@@ -56,9 +56,9 @@ public enum MFFSMaschines
 		this.baseTex = baseTex;
 	}
 
-	public static MFFSMaschines fromdisplayName(String displayName)
+	public static MFFSMachines fromdisplayName(String displayName)
 	{
-		for (MFFSMaschines mach : values())
+		for (MFFSMachines mach : values())
 		{
 			if (mach.displayName.equals(displayName))
 			{
@@ -68,9 +68,9 @@ public enum MFFSMaschines
 		return null;
 	}
 
-	public static MFFSMaschines fromTE(TileEntity tem)
+	public static MFFSMachines fromTE(TileEntity tem)
 	{
-		for (MFFSMaschines mach : values())
+		for (MFFSMachines mach : values())
 		{
 			if (mach.clazz.isInstance(tem))
 			{
@@ -82,7 +82,7 @@ public enum MFFSMaschines
 
 	public static void initialize()
 	{
-		for (MFFSMaschines mach : values())
+		for (MFFSMachines mach : values())
 		{
 			GameRegistry.registerBlock(mach.block, mach.inCodeName);
 			GameRegistry.registerTileEntity(mach.clazz, mach.inCodeName);

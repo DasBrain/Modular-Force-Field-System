@@ -2,7 +2,7 @@ package mffs.common.item;
 
 import java.util.List;
 
-import mffs.common.MFFSMaschines;
+import mffs.common.MFFSMachines;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 
@@ -32,8 +32,8 @@ public class ItemProjectorFieldModulatorStrength extends ItemMFFSBase
 		if ((Keyboard.isKeyDown(42)) || (Keyboard.isKeyDown(54)))
 		{
 			info.add("compatible with:");
-			info.add("MFFS " + MFFSMaschines.Projector.displayName);
-			info.add("MFFS " + MFFSMaschines.DefenceStation.displayName);
+			info.add("MFFS " + MFFSMachines.Projector.displayName);
+			info.add("MFFS " + MFFSMachines.DefenceStation.displayName);
 		}
 		else
 		{

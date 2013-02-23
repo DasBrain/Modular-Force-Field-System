@@ -247,7 +247,7 @@ public final class Linkgrid
 
 		public TileEntityMachines getTileEntityMachines(String displayname, int key)
 		{
-			MFFSMaschines tem = MFFSMaschines.fromdisplayName(displayname);
+			MFFSMachines tem = MFFSMachines.fromdisplayName(displayname);
 
 			if (tem != null)
 			{

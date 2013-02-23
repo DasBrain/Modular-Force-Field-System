@@ -32,15 +32,15 @@ public class CommonProxy implements IGuiHandler
 			return null;
 		}
 
-		MFFSMaschines machType = MFFSMaschines.fromTE(te);
+		MFFSMachines machType = MFFSMachines.fromTE(te);
 		try
 		{
-			Constructor mkGui = Class.forName("chb.mods.mffs.client.gui." + machType.Gui).getConstructor(new Class[] { EntityPlayer.class, machType.clazz });
+			Constructor mkGui = Class.forName("mffs.client.gui." + machType.Gui).getConstructor(new Class[] { EntityPlayer.class, machType.clazz });
 			return mkGui.newInstance(new Object[] { player, machType.clazz.cast(te) });
 		}
 		catch (Exception ex)
 		{
-			System.out.println(ex.getLocalizedMessage());
+			System.out.println("Failed to open GUI: " + ex.getLocalizedMessage());
 		}
 
 		return null;
@@ -54,7 +54,7 @@ public class CommonProxy implements IGuiHandler
 			return null;
 		}
 
-		MFFSMaschines machType = MFFSMaschines.fromTE(te);
+		MFFSMachines machType = MFFSMachines.fromTE(te);
 		try
 		{
 			Constructor mkGui = machType.Container.getConstructor(new Class[] { EntityPlayer.class, machType.clazz });
@@ -62,7 +62,7 @@ public class CommonProxy implements IGuiHandler
 		}
 		catch (Exception ex)
 		{
-			System.out.println(ex.getLocalizedMessage());
+			System.out.println("Failed to open GUI: " + ex.getLocalizedMessage());
 		}
 
 		return null;
