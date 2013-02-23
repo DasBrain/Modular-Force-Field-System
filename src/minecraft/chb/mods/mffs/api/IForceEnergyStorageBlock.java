@@ -16,8 +16,3 @@ public abstract interface IForceEnergyStorageBlock
 
   public abstract int getfreeStorageAmount();
 }
-
-/* Location:           C:\Users\Calclavia\Desktop\Decompiler\Mods\MFFS.zip
- * Qualified Name:     chb.mods.mffs.api.IForceEnergyStorageBlock
- * JD-Core Version:    0.6.2
- */

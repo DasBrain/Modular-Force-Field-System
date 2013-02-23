@@ -16,8 +16,3 @@ public abstract interface IForceEnergyItems
 
   public abstract int getItemDamage(ItemStack paramItemStack);
 }
-
-/* Location:           C:\Users\Calclavia\Desktop\Decompiler\Mods\MFFS.zip
- * Qualified Name:     chb.mods.mffs.api.IForceEnergyItems
- * JD-Core Version:    0.6.2
- */
